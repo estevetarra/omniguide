@@ -23,5 +23,6 @@
         android:text="Sync"
         android:id="@+id/Sync"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="sync1" />
 </RelativeLayout>

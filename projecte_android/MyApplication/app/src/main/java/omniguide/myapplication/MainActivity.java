@@ -1,6 +1,9 @@
 package omniguide.myapplication;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,15 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -52,8 +46,39 @@ public class MainActivity extends AppCompatActivity {
 
     public void sync1(View view) {
         // Do something when sync
-
-
-
+        //Sync first Xiaomi
+        setContentView(R.layout.activity_sync2);
     }
+
+    public void sync2(View view){
+        //sync second xiaomi
+        setContentView(R.layout.activity_guide);
+    }
+
+    public void skip(View view){
+        //Nothing
+        setContentView(R.layout.activity_guide);
+    }
+
+    public void left(View view){
+        //Vibrate left
+    }
+
+    public void right(View view){
+        //Vibrate right
+    }
+
+    public void obstacle(View view){
+        //Vibrate both
+    }
+
+    public void destination(View view){
+        // Get instance of Vibrator from current Context
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
+        // Vibrate for 400 milliseconds
+        v.vibrate(400);
+    }
+
+
 }

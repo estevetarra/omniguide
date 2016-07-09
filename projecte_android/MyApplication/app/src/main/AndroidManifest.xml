@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".sync2" />
         <activity android:name=".guide"></activity>
+        <uses-permission android:name="android.permission.VIBRATE"/>
+
     </application>
 
 </manifest>

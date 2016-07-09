@@ -17,7 +17,8 @@
         android:layout_above="@+id/button4"
         android:layout_toLeftOf="@+id/button4"
         android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:layout_alignStart="@+id/button"
+        android:onClick="obstacle" />
 
     <Button
         android:layout_width="wrap_content"
@@ -26,7 +27,8 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="163dp" />
+        android:layout_marginBottom="163dp"
+        android:onClick="destination" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,7 +37,8 @@
         android:id="@+id/button3"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button" />
+        android:layout_toStartOf="@+id/button"
+        android:onClick="left" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,5 +47,6 @@
         android:id="@+id/button4"
         android:layout_above="@+id/button"
         android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
+        android:layout_toEndOf="@+id/button"
+        android:onClick="right" />
 </RelativeLayout>
