@@ -88,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
         v.vibrate(400);
     }
 
+    //Here maps api
+
+
 
     public XiaomiBand LBand;
     public XiaomiBand RBand;
