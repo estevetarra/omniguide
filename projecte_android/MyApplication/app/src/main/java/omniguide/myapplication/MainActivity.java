@@ -49,4 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void sync1(View view) {
+        // Do something when sync
+
+
+
+    }
 }
