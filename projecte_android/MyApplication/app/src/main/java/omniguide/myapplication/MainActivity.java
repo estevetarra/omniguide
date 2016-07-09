@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,8 +48,14 @@ public class MainActivity extends AppCompatActivity {
     public void sync1(View view) {
         // Do something when sync
         //Sync first Xiaomi
-        this.LBand = new XiaomiBand("C8:0F:10:0B:1F:8D");
-        setContentView(R.layout.activity_sync2);
+
+        //this.LBand = new XiaomiBand("C8:0F:10:0B:1F:9D");//8D
+
+
+
+        TextView myText = (TextView) findViewById(R.id.textView2);
+        myText.setText(this.LBand.state);
+        //setContentView(R.layout.activity_sync2);*/
     }
 
     public void sync2(View view){
