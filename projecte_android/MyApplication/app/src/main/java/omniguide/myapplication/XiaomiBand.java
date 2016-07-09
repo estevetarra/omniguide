@@ -19,13 +19,14 @@ public class XiaomiBand {
 
     public XiaomiBand(String mac){
         //Addres for one device is C8:0F:10:0B:1F:8D
-        /*Termporal*/ mac = "C8:0F:10:0B:1F:8D";
+
         //Check for correct mac adress
         if(Badapter.checkBluetoothAddress(mac)) {
 
             //if true add device to class
             try {
                 this.device = Badapter.getRemoteDevice(mac);
+
             }catch (Exception e){
                 //do something
             }
