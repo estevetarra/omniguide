@@ -49,13 +49,12 @@ public class MainActivity extends AppCompatActivity {
         // Do something when sync
         //Sync first Xiaomi
 
-        //this.LBand = new XiaomiBand("C8:0F:10:0B:1F:9D");//8D
+        this.LBand = new XiaomiBand("C8:0F:10:0B:1F:8D");//default mac for one of the bands
 
 
-
+        //debuging
         TextView myText = (TextView) findViewById(R.id.textView2);
         myText.setText(this.LBand.state);
-        //setContentView(R.layout.activity_sync2);*/
     }
 
     public void sync2(View view){
