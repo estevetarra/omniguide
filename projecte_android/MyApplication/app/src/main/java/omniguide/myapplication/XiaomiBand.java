@@ -9,7 +9,7 @@ public class XiaomiBand {
     //Private instances and data from the band
     private String position; //left or right hand
 
-    
+
 
     //For debugging...
     public String state = "";
